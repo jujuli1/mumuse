@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/styleLoginAndSignup.css">
+    <link href="https://fonts.cdnfonts.com/css/warcraft" rel="stylesheet">
+    <style>@import url('https://fonts.cdnfonts.com/css/warcraft');</style>
+    <title>Document</title>
+</head>
+
+<main class="container py-4">
+
+ 
+
+  <!-- Toast en cas d'erreur -->
+  <% if(typeof errorMessage !== 'undefined') { %>
+    <div class="alert alert-danger" role="alert">
+      <%= errorMessage %>
+    </div>
+  <% } %>
+
+  <form class="formulaireSignup" action="/signup" method="POST">
+    <label class="form-labelSignup" for="firstname">Prenom</label>
+    <input class="form-controlSignup" type="firstname" id="firstname" name="firstname" placeholder="Prénom">
+
+    <label class="form-labelSignup" for="lastname">Nom</label>
+    <input class="form-controlSignup" type="lastname" id="lastname" name="lastname" placeholder="Nom">
+
+    <label class="form-labelSignup" for="email">Email</label>
+    <input class="form-controlSignup" type="email" id="email" name="email" placeholder="email@domain.com">
+
+    <label class="form-labelSignupMp" for="password">Mot de passe</label>
+    <input class="form-controlSignup" type="password" id="password" name="password" placeholder="**">
+
+    <label class="form-labelSignupConfirmation" for="confirmation">confirmation</label>
+    <input class="form-controlSignup" type="password" id="confirmation" name="confirmation" placeholder="**">
+    
+    <input class="boutonInscription" type="submit" value="S'inscrire">
+  </form>
+
+</main>
+
+</body>
+</html>

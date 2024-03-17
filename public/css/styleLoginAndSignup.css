@@ -1,0 +1,109 @@
+body{
+    background-image: url('/images/azeroth.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.formulaire {
+    display: inline-grid;
+    margin-left: 40%;
+    margin-top: 10%;
+}
+.formulaireSignup {
+    display: inline-grid;
+    padding-left: 10%;
+    padding-top: 4%;
+}
+
+.form-control {
+    font-size: 30px;
+    border: solid;
+}
+.form-controlSignup {
+    font-size: 30px;
+    border: solid;
+}
+
+
+
+
+
+.form-labelh4 {
+    font-size: 35px;
+    font-family: warcraft;
+    color: currentColor;
+    padding-left: 130px;
+    margin-bottom: 10px;
+    margin-top: 36px;
+}
+.form-labelh4Mp {
+    font-size: 35px;
+    font-family: warcraft;
+    color: currentColor;
+    padding-left: 80px;
+    margin-bottom: 10px;
+    margin-top: 36px;
+
+}
+.form-labelSignup {
+    font-size: 35px;
+    font-family: warcraft;
+    color: currentColor;
+    padding-left: 127px;
+    margin-bottom: 10px;
+    margin-top: 36px;
+
+}
+.form-labelSignupMp {
+
+    font-size: 35px;
+    font-family: warcraft;
+    color: currentColor;
+    padding-left: 85px;
+    margin-bottom: 10px;
+    margin-top: 36px;
+}
+.form-labelSignupConfirmation {
+    
+    font-size: 35px;
+    font-family: warcraft;
+    color: currentColor;
+    padding-left: 87px;
+    margin-bottom: 10px;
+    margin-top: 36px;
+}
+
+
+
+
+.boutonConnexion {
+    margin-top: 30px;
+    width: 208px;
+    font-size: 30px;
+    margin-left: 85px;
+    background-color: burlywood;
+    border-radius: 20px;
+}
+.boutonInscription {
+    margin-top: 30px;
+    width: 208px;
+    font-size: 30px;
+    margin-left: 85px;
+    background-color: burlywood;
+    border-radius: 20px;
+
+}
+
+.retour {
+    
+    font-size: 27px;
+    font-family: 'warcraft', sans-serif;
+    margin-left: 22%;
+    color: burlywood;
+    text-decoration: none;
+
+}
+

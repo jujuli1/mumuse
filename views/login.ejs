@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/styleLoginAndSignup.css">
+    <link href="https://fonts.cdnfonts.com/css/warcraft" rel="stylesheet">
+    <style>@import url('https://fonts.cdnfonts.com/css/warcraft');</style>
+    <title>Document</title>
+</head>
+
+<body>
+  <header>
+
+
+    <a  href="/"  class="retour">RETOUR A L'ACCEUIL</a>
+  </header>
+
+<main class="container py-4">
+
+  
+  
+
+  
+  <% if (typeof errorMessage !== 'undefined') { %>
+    <div class="alert alert-danger" role="alert">
+      <%= errorMessage %>
+    </div>
+  <% } %>
+
+  
+
+  <form class="formulaire" action="/login" method="POST">
+
+    <label class="form-labelh4" for="firstname">Email</label>
+    <input class="form-control" type="firstname" id="firstname" name="firstname" placeholder="firstname">
+
+   
+
+    <label class="form-labelh4" for="email">Email</label>
+    <input class="form-control" type="email" id="email" name="email" placeholder="email@domain.com">
+
+    <label class="form-labelh4Mp" for="password">Mot de passe</label>
+    <input class="form-control" type="password" id="password" name="password" placeholder="*********">
+    
+    <input class="boutonConnexion" type="submit" value="Connexion">
+  </form>
+
+</main>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/styleSylvanas.css">
+    <link href="https://fonts.cdnfonts.com/css/warcraft" rel="stylesheet">
+    <style>@import url('https://fonts.cdnfonts.com/css/warcraft');</style>
+    <script defer src="js/scriptSylvanas.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    
+    
+    
+    
+    <div id="menu-slider">
+
+        <div><a href="./index.ejs"><img src="images/sylva.jpg" class="images-menu-slide"></a></div>
+        <div><a href="./index.ejs"><img src="images/sylvanas.jpg" class="images-menu-slide"></a></div>
+        <div><a href="./index.ejs"><img src="images/sylva.jpg" class="images-menu-slide"></a></div>
+        <div><a href="./index.ejs"><img src="images/sylvanas.jpg" class="images-menu-slide"></a></div>
+    </div>
+
+    <% for( let sylvanas of WeaponSylvanas) {%>
+
+    <div class="col-sm-12 col-md-4" style="margin-top:20px; margin-bottom:20px;">
+                <div class="card">
+                <img src="<%= sylvanas.img_url %>" class="card-img-top" alt="<%= sylvanas.name %>">
+                <div class="card-body">
+                    <h5 class="card-title"><%= sylvanas.name %></h5>
+                    <p class="card-text"><%= sylvanas.description %></p>
+                    <p class="card-text"><strong><%= sylvanas.price %></strong></p>
+                </div>
+                
+                </div>
+            </div>
+            <% } %>
+
+            <iframe class="videoSylvanas"  width="600" height="307" src="https://www.youtube.com/embed/D-XXqYoD6-M" title="Arthas Kills Sylvanas - Cinematic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    
+            
+</body>
+</html>
